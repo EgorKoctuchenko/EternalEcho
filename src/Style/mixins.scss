@@ -1,0 +1,41 @@
+@mixin TextMixin() {
+  font-size: 3.5em;
+  font-family: Teletactile;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.5px;
+}
+@mixin buttonBase($enable-hover: true) {
+  width: 345px;
+  height: 80px;
+  border: none;
+  border-radius: 20px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(96, 26, 74, 1) 0%,
+    rgba(91, 30, 132, 1) 100%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 3px solid black;
+  box-shadow: 0px 0px 15px black;
+  @if $enable-hover {
+    &:hover {
+      transition: 0.3s;
+      background: radial-gradient(
+        ellipse at center,
+        rgb(163, 51, 128) 0%,
+        rgb(164, 66, 230) 100%
+      );
+      border: 3px solid rgb(218, 218, 218);
+      box-shadow: 0px 0px 5px rgb(218, 218, 218);
+      transform: scale(1.05);
+    }
+  }
+}

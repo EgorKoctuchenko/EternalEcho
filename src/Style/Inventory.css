@@ -1,0 +1,100 @@
+.InventoryList {
+  height: 180px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+  grid-template-columns: 10% 80% 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.InventoryList__Items {
+  padding: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 10px 1fr;
+  grid-template-rows: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 10px;
+  font-size: 3.5em;
+  font-family: Teletactile;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.5px;
+  font-size: 3.5em;
+}
+.InventoryList__Items > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.InventoryList__Items > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.InventoryList__Items > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.InventoryList__Items > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+.InventoryList__Items__Item p {
+  cursor: pointer;
+  padding: 0 15px;
+  display: inline-block;
+  font-size: 2.5rem;
+  -webkit-filter: drop-shadow(0px 0px 5px black);
+          filter: drop-shadow(0px 0px 5px black);
+  letter-spacing: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.InventoryList__Items__Item p:hover {
+  -webkit-filter: drop-shadow(0px 0px 5px rgb(100, 100, 100));
+          filter: drop-shadow(0px 0px 5px rgb(100, 100, 100));
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.InventoryList__Button {
+  font-size: 3.5em;
+  font-family: Teletactile;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.5px;
+  font-size: 7em;
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+  -webkit-filter: drop-shadow(0px 0px 5px black);
+          filter: drop-shadow(0px 0px 5px black);
+}
+.InventoryList__Button:hover {
+  -webkit-filter: drop-shadow(0px 0px 5px rgb(100, 100, 100));
+          filter: drop-shadow(0px 0px 5px rgb(100, 100, 100));
+}
+
+.Tooltip {
+  text-align: center;
+  font-size: 3.5em;
+  font-family: Teletactile;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.5px;
+  border-top: 5px solid rgb(192, 192, 192);
+  border-bottom: 5px solid rgb(192, 192, 192);
+  height: 60px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 2.5em;
+  letter-spacing: 1.5px;
+  -webkit-filter: drop-shadow(0px 0px 5px black);
+          filter: drop-shadow(0px 0px 5px black);
+}

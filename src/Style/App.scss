@@ -1,0 +1,24 @@
+@mixin TextMixin() {
+  font-size: 5em;
+  font-family: Teletactile;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.5px;
+}
+//FONTS
+@font-face {
+  font-family: "Teletactile";
+  src: url("../assets/Fonts/TeletactileRus.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+//IMPORTS
+@import url(./NullStyle.css);
+//
+@import url(./Interface.css);
+//
+@import url(./BackGround.css);
+//
+@import url(./Inventory.css);
+//
+@import url(./Attacks.css);

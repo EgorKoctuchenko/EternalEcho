@@ -1,0 +1,264 @@
+.AttacksMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.AttacksMenu__Base {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 10px 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.AttacksMenu__Base > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.AttacksMenu__Base > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.AttacksMenu__Base > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.AttacksMenu__Base > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.AttacksMenu__Base__at {
+  position: relative;
+  width: 345px;
+  height: 80px;
+  border: none;
+  border-radius: 20px;
+  background: radial-gradient(ellipse at center, rgb(96, 26, 74) 0%, rgb(91, 30, 132) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  padding: 0 15px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 3px solid black;
+  -webkit-box-shadow: 0px 0px 15px black;
+          box-shadow: 0px 0px 15px black;
+  font-size: 3.5em;
+  font-family: Teletactile;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.5px;
+  font-size: 2.3em;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 350px;
+  height: 70px;
+}
+.AttacksMenu__Base__at:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: radial-gradient(ellipse at center, rgb(163, 51, 128) 0%, rgb(164, 66, 230) 100%);
+  border: 3px solid rgb(218, 218, 218);
+  -webkit-box-shadow: 0px 0px 5px rgb(218, 218, 218);
+          box-shadow: 0px 0px 5px rgb(218, 218, 218);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.AttacksMenu__Base__at__SecVal {
+  position: absolute;
+  bottom: 0px;
+  right: 60px;
+  font-size: 2rem;
+}
+.AttacksMenu__Super {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 600px;
+}
+.AttacksMenu__Super__at {
+  position: relative;
+  width: 345px;
+  height: 80px;
+  border: none;
+  border-radius: 20px;
+  background: radial-gradient(ellipse at center, rgb(96, 26, 74) 0%, rgb(91, 30, 132) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  padding: 0 15px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 3px solid black;
+  -webkit-box-shadow: 0px 0px 15px black;
+          box-shadow: 0px 0px 15px black;
+  font-size: 3.5em;
+  font-family: Teletactile;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.5px;
+  font-size: 2.3em;
+  width: 300px;
+  height: 70px;
+  background: radial-gradient(ellipse at center, rgb(48, 13, 37) 0%, rgb(39, 14, 56) 100%);
+  color: rgb(65, 65, 65);
+}
+.AttacksMenu__Super__at__Active {
+  position: relative;
+  width: 345px;
+  height: 80px;
+  border: none;
+  border-radius: 20px;
+  background: radial-gradient(ellipse at center, rgb(96, 26, 74) 0%, rgb(91, 30, 132) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  padding: 0 15px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 3px solid black;
+  -webkit-box-shadow: 0px 0px 15px black;
+          box-shadow: 0px 0px 15px black;
+  font-size: 3.5em;
+  font-family: Teletactile;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.5px;
+  font-size: 2.3em;
+  width: 300px;
+  height: 70px;
+  -webkit-animation: SuperAttackPulse 0.6s infinite;
+          animation: SuperAttackPulse 0.6s infinite;
+}
+.AttacksMenu__Super__at__Active:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: radial-gradient(ellipse at center, rgb(163, 51, 128) 0%, rgb(164, 66, 230) 100%);
+  border: 3px solid rgb(218, 218, 218);
+  -webkit-box-shadow: 0px 0px 5px rgb(218, 218, 218);
+          box-shadow: 0px 0px 5px rgb(218, 218, 218);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.AttacksMenu__Super__Bar__Info {
+  font-size: 3.5em;
+  font-family: Teletactile;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-size: 3em;
+}
+.AttacksMenu__Super__Bar__Outside {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border: 3px solid black;
+  position: relative;
+  width: 350px;
+  height: 35px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.AttacksMenu__Super__Bar__Inside {
+  height: 100%;
+  background-color: rgb(157, 46, 248);
+}
+
+.magic-style {
+  color: #2196f3;
+  -webkit-filter: drop-shadow(0px 0px 3px black);
+          filter: drop-shadow(0px 0px 3px black);
+}
+
+.demon-style {
+  color: #b30404;
+  -webkit-filter: drop-shadow(0px 0px 3px black);
+          filter: drop-shadow(0px 0px 3px black);
+}
+
+.super-style {
+  color: #d572e9;
+  -webkit-filter: drop-shadow(0px 0px 3px black);
+          filter: drop-shadow(0px 0px 3px black);
+}
+
+.icon-dark {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+@-webkit-keyframes SuperAttackPulse {
+  0% {
+    -webkit-filter: contrast(80%) drop-shadow(0px 0px 10px rgb(231, 162, 14));
+            filter: contrast(80%) drop-shadow(0px 0px 10px rgb(231, 162, 14));
+  }
+  50% {
+    -webkit-filter: contrast(95%) drop-shadow(0px 0px 3px rgb(226, 19, 105));
+            filter: contrast(95%) drop-shadow(0px 0px 3px rgb(226, 19, 105));
+  }
+  100% {
+    -webkit-filter: contrast(110%) drop-shadow(0px 0px 3px rgb(133, 19, 226));
+            filter: contrast(110%) drop-shadow(0px 0px 3px rgb(133, 19, 226));
+  }
+}
+
+@keyframes SuperAttackPulse {
+  0% {
+    -webkit-filter: contrast(80%) drop-shadow(0px 0px 10px rgb(231, 162, 14));
+            filter: contrast(80%) drop-shadow(0px 0px 10px rgb(231, 162, 14));
+  }
+  50% {
+    -webkit-filter: contrast(95%) drop-shadow(0px 0px 3px rgb(226, 19, 105));
+            filter: contrast(95%) drop-shadow(0px 0px 3px rgb(226, 19, 105));
+  }
+  100% {
+    -webkit-filter: contrast(110%) drop-shadow(0px 0px 3px rgb(133, 19, 226));
+            filter: contrast(110%) drop-shadow(0px 0px 3px rgb(133, 19, 226));
+  }
+}

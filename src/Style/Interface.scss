@@ -1,0 +1,198 @@
+@import "./mixins.scss";
+//
+.interfaceOuter {
+  padding: 15px;
+  bottom: 0px;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  height: 280px;
+  background: linear-gradient(
+    to top,
+    rgba(125, 126, 125, 0.4) 0%,
+    rgba(41, 41, 41, 0.4) 50%,
+    rgba(14, 14, 14, 0.4) 100%
+  );
+
+  filter: drop-shadow(0px 0px 25px rgba(96, 30, 252, 0.8));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-rows: 35% 65%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: 0px 0px 10px 10px rgba(96, 30, 252, 0.8);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-top: 4px solid rgb(192, 192, 192);
+  animation: UpInterface 0.4s;
+}
+
+@keyframes UpInterface {
+  0% {
+    transform: translateY(500px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes rotateGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.interface {
+  &UpSide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    padding: 10px 0;
+    &__First {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      &__Avatar {
+        box-shadow: 0px 0px 15px rgb(252, 252, 252);
+        background-color: black;
+        width: 120px;
+        border-radius: 15px;
+      }
+      &__Info {
+        margin-left: 15px;
+        height: 100%;
+        width: 400px;
+        &__Names {
+          @include TextMixin();
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          font-size: 5em;
+          &__Type {
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            filter: drop-shadow(0px 0px 5px black);
+            width: 40px;
+            padding: 5px;
+          }
+        }
+        &__Stats {
+          display: flex;
+          gap: 10px;
+          height: 55px;
+          &__Current {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #601a4a;
+            height: 65px;
+            width: 65px;
+            gap: 5px;
+            border: 2px solid black;
+            box-shadow: 0px 0px 15px black;
+            border-radius: 15px;
+            &__Img {
+              width: 25px;
+            }
+            &__Stat {
+              @include TextMixin();
+              font-size: 1.5em;
+              letter-spacing: 2px;
+              font-weight: 100;
+            }
+          }
+        }
+      }
+    }
+    &__Bars {
+      display: flex;
+      gap: 30px;
+      &__Hp,
+      &__Mana {
+        &__Current {
+          @include TextMixin();
+          text-align: center;
+          letter-spacing: 3px;
+        }
+        &__Bar {
+          background-color: rgba(0, 0, 0, 0.55);
+          position: relative;
+          border: 3px solid black;
+          width: 350px;
+          height: 35px;
+          border-radius: 25px;
+          overflow: hidden;
+          &__Inner {
+            position: absolute;
+            height: 100%;
+            background-color: rgb(164, 66, 230);
+            transition: 0.55s linear;
+          }
+        }
+      }
+      &__Mana {
+        &__Bar {
+          background-color: rgba(0, 0, 0, 0.55);
+          &__Inner {
+            background-color: #2196f3;
+          }
+        }
+      }
+    }
+  }
+  &DownSide {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    &__Icon {
+      width: 50px;
+      height: 50px;
+      filter: drop-shadow(0px 0px 5px black);
+    }
+    &__Name {
+      @include TextMixin();
+      font-size: 2.5em;
+    }
+    &__Attack {
+      @include buttonBase();
+    }
+    &__Inv {
+      @include buttonBase();
+    }
+    &__Prepare {
+      @include buttonBase();
+    }
+    &__Run {
+      @include buttonBase();
+    }
+  }
+}
+////General styles
+.BackButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  @include TextMixin();
+  font-size: 2.5em;
+  background-color: transparent;
+  height: 40px;
+  width: 275px;
+  letter-spacing: 2px;
+  filter: drop-shadow(0px 0px 5px black);
+  transition: 0.1s;
+  &:hover {
+    filter: drop-shadow(0px 0px 15px rgb(88, 88, 88));
+    transition: 0.1s;
+  }
+}
