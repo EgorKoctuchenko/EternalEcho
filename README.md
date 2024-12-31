@@ -14,12 +14,11 @@ Eternal Echo is a pixel-art indie game that explores deep philosophical concepts
 ## **Key Features:**
 ### **Dynamic Combat Styles**
 1. Turn-based RPG mechanics.
-2. Open-world real-time combat.
-3. 
+2. **And the others as they are added..**
 
 ### **Philosophical Narrative**
 1. Players explore themes of free will, systemic control, and the inevitable cycles of life.
-2. **And the others as they are added..**
+2. Richly developed characters with *hidden depths and symbolic meanings*.
 
 ### **Branching Storylines**
 1. Your choices lead to *different endings*, each with unique gameplay elements.
