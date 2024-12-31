@@ -53,6 +53,11 @@ Eternal Echo is a pixel-art indie game that explores deep philosophical concepts
 2. Liminal aesthetics and philosophical themes in storytelling.
 
 ---
+## License
+This project is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](LICENSE).  
+![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)
+
+---
 
 ## **Known issues**
 - !!The game is in the early stages of development. Of all the features, only the interface preview is available
